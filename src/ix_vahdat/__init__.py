@@ -20,6 +20,12 @@ from ix_vahdat.domain import (
     SensorStatus,
     SiteContext,
 )
+from ix_vahdat.receipts import (
+    EvidenceInput,
+    EvidenceReceipt,
+    ReceiptKind,
+    create_receipt,
+)
 from ix_vahdat.review import (
     ReviewDecision,
     ReviewGateResult,
@@ -39,8 +45,11 @@ from ix_vahdat.water_use import (
 __all__ = [
     "Coordinates",
     "DecisionStatus",
+    "EvidenceInput",
     "EvidenceQuality",
+    "EvidenceReceipt",
     "Measurement",
+    "ReceiptKind",
     "ReviewDecision",
     "ReviewGateResult",
     "ReviewerRecord",
@@ -54,5 +63,6 @@ __all__ = [
     "WaterUsePolicy",
     "__version__",
     "classify_water_use",
+    "create_receipt",
     "require_human_review",
 ]
