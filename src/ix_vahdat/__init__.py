@@ -61,6 +61,15 @@ from ix_vahdat.failures import (
     FailureSeverity,
     evaluate_failure_modes,
 )
+from ix_vahdat.infrastructure import (
+    AssetHealthState,
+    InfrastructureAssetType,
+    InfrastructureHealthPolicy,
+    InfrastructureHealthResult,
+    InfrastructureObservation,
+    InfrastructureSnapshot,
+    evaluate_infrastructure_health,
+)
 from ix_vahdat.maintenance import (
     MaintenanceCategory,
     MaintenanceItem,
@@ -127,6 +136,7 @@ __all__ = [
     "AWHTriageOption",
     "AWHTriagePolicy",
     "AWHTriageResult",
+    "AssetHealthState",
     "AtmosphericSiteConstraints",
     "AtmosphericWaterClimate",
     "AtmosphericWaterInputs",
@@ -151,6 +161,11 @@ __all__ = [
     "FailureMode",
     "FailureRegistry",
     "FailureSeverity",
+    "InfrastructureAssetType",
+    "InfrastructureHealthPolicy",
+    "InfrastructureHealthResult",
+    "InfrastructureObservation",
+    "InfrastructureSnapshot",
     "LoadPriority",
     "MaintenanceCategory",
     "MaintenanceItem",
@@ -192,6 +207,7 @@ __all__ = [
     "evaluate_emergency_reserve",
     "evaluate_energy_portfolio",
     "evaluate_failure_modes",
+    "evaluate_infrastructure_health",
     "evaluate_maintenance",
     "evaluate_power_priority",
     "evaluate_water_quality_gate",
