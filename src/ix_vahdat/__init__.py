@@ -52,6 +52,15 @@ from ix_vahdat.energy_profile import (
     WaterSupportPath,
     evaluate_energy_portfolio,
 )
+from ix_vahdat.failures import (
+    FailureCategory,
+    FailureEvaluationPolicy,
+    FailureEvaluationResult,
+    FailureMode,
+    FailureRegistry,
+    FailureSeverity,
+    evaluate_failure_modes,
+)
 from ix_vahdat.maintenance import (
     MaintenanceCategory,
     MaintenanceItem,
@@ -136,6 +145,12 @@ __all__ = [
     "EvidenceInput",
     "EvidenceQuality",
     "EvidenceReceipt",
+    "FailureCategory",
+    "FailureEvaluationPolicy",
+    "FailureEvaluationResult",
+    "FailureMode",
+    "FailureRegistry",
+    "FailureSeverity",
     "LoadPriority",
     "MaintenanceCategory",
     "MaintenanceItem",
@@ -176,6 +191,7 @@ __all__ = [
     "create_receipt",
     "evaluate_emergency_reserve",
     "evaluate_energy_portfolio",
+    "evaluate_failure_modes",
     "evaluate_maintenance",
     "evaluate_power_priority",
     "evaluate_water_quality_gate",
