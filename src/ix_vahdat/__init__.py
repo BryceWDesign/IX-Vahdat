@@ -38,6 +38,13 @@ from ix_vahdat.review import (
     ReviewStatus,
     require_human_review,
 )
+from ix_vahdat.treatment import (
+    TreatmentRoute,
+    TreatmentRoutingPolicy,
+    TreatmentRoutingResult,
+    TreatmentSystemSnapshot,
+    route_treatment_batch,
+)
 from ix_vahdat.version import __version__
 from ix_vahdat.water_use import (
     WaterQualitySnapshot,
@@ -62,6 +69,10 @@ __all__ = [
     "RiskLevel",
     "SensorStatus",
     "SiteContext",
+    "TreatmentRoute",
+    "TreatmentRoutingPolicy",
+    "TreatmentRoutingResult",
+    "TreatmentSystemSnapshot",
     "WaterQualityGatePolicy",
     "WaterQualityGateResult",
     "WaterQualitySnapshot",
@@ -73,4 +84,5 @@ __all__ = [
     "create_receipt",
     "evaluate_water_quality_gate",
     "require_human_review",
+    "route_treatment_batch",
 ]
