@@ -23,6 +23,11 @@ from ix_vahdat.awh import (
     AWHTriageResult,
     triage_atmospheric_water,
 )
+from ix_vahdat.awh_scoring import (
+    AWHModeScore,
+    AWHScoreBand,
+    score_awh_modes,
+)
 from ix_vahdat.domain import (
     Coordinates,
     DecisionStatus,
@@ -68,6 +73,8 @@ from ix_vahdat.water_use import (
 
 __all__ = [
     "AWHMode",
+    "AWHModeScore",
+    "AWHScoreBand",
     "AWHTriageOption",
     "AWHTriagePolicy",
     "AWHTriageResult",
@@ -104,5 +111,6 @@ __all__ = [
     "evaluate_water_quality_gate",
     "require_human_review",
     "route_treatment_batch",
+    "score_awh_modes",
     "triage_atmospheric_water",
 ]
