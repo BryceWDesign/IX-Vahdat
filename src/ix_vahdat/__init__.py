@@ -11,6 +11,11 @@ It does not certify water as potable, replace licensed engineers or public
 health authorities, issue permits, or authorize autonomous physical action.
 """
 
+from ix_vahdat.atmospheric import (
+    AtmosphericSiteConstraints,
+    AtmosphericWaterClimate,
+    AtmosphericWaterInputs,
+)
 from ix_vahdat.domain import (
     Coordinates,
     DecisionStatus,
@@ -55,6 +60,9 @@ from ix_vahdat.water_use import (
 )
 
 __all__ = [
+    "AtmosphericSiteConstraints",
+    "AtmosphericWaterClimate",
+    "AtmosphericWaterInputs",
     "Coordinates",
     "DecisionStatus",
     "EvidenceInput",
