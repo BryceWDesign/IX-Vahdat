@@ -52,6 +52,15 @@ from ix_vahdat.energy_profile import (
     WaterSupportPath,
     evaluate_energy_portfolio,
 )
+from ix_vahdat.power import (
+    LoadPriority,
+    PowerLoad,
+    PowerMode,
+    PowerPriorityPolicy,
+    PowerPriorityResult,
+    PowerSystemSnapshot,
+    evaluate_power_priority,
+)
 from ix_vahdat.quality import (
     WaterQualityGatePolicy,
     WaterQualityGateResult,
@@ -108,7 +117,13 @@ __all__ = [
     "EvidenceInput",
     "EvidenceQuality",
     "EvidenceReceipt",
+    "LoadPriority",
     "Measurement",
+    "PowerLoad",
+    "PowerMode",
+    "PowerPriorityPolicy",
+    "PowerPriorityResult",
+    "PowerSystemSnapshot",
     "ReceiptKind",
     "ReviewDecision",
     "ReviewGateResult",
@@ -134,6 +149,7 @@ __all__ = [
     "classify_water_use",
     "create_receipt",
     "evaluate_energy_portfolio",
+    "evaluate_power_priority",
     "evaluate_water_quality_gate",
     "require_human_review",
     "route_treatment_batch",
