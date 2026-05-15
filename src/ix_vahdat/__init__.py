@@ -20,6 +20,11 @@ from ix_vahdat.domain import (
     SensorStatus,
     SiteContext,
 )
+from ix_vahdat.quality import (
+    WaterQualityGatePolicy,
+    WaterQualityGateResult,
+    evaluate_water_quality_gate,
+)
 from ix_vahdat.receipts import (
     EvidenceInput,
     EvidenceReceipt,
@@ -57,6 +62,8 @@ __all__ = [
     "RiskLevel",
     "SensorStatus",
     "SiteContext",
+    "WaterQualityGatePolicy",
+    "WaterQualityGateResult",
     "WaterQualitySnapshot",
     "WaterUseAssessment",
     "WaterUseClass",
@@ -64,5 +71,6 @@ __all__ = [
     "__version__",
     "classify_water_use",
     "create_receipt",
+    "evaluate_water_quality_gate",
     "require_human_review",
 ]
