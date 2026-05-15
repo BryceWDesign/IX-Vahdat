@@ -37,6 +37,13 @@ from ix_vahdat.domain import (
     SensorStatus,
     SiteContext,
 )
+from ix_vahdat.energy import (
+    EnergyAccountingPolicy,
+    EnergyAccountingResult,
+    EnergySnapshot,
+    EnergySource,
+    calculate_energy_accounting,
+)
 from ix_vahdat.quality import (
     WaterQualityGatePolicy,
     WaterQualityGateResult,
@@ -83,6 +90,10 @@ __all__ = [
     "AtmosphericWaterInputs",
     "Coordinates",
     "DecisionStatus",
+    "EnergyAccountingPolicy",
+    "EnergyAccountingResult",
+    "EnergySnapshot",
+    "EnergySource",
     "EvidenceInput",
     "EvidenceQuality",
     "EvidenceReceipt",
@@ -106,6 +117,7 @@ __all__ = [
     "WaterUseClass",
     "WaterUsePolicy",
     "__version__",
+    "calculate_energy_accounting",
     "classify_water_use",
     "create_receipt",
     "evaluate_water_quality_gate",
