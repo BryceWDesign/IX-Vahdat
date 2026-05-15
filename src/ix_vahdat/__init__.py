@@ -21,6 +21,13 @@ from ix_vahdat.domain import (
     SiteContext,
 )
 from ix_vahdat.version import __version__
+from ix_vahdat.water_use import (
+    WaterQualitySnapshot,
+    WaterUseAssessment,
+    WaterUseClass,
+    WaterUsePolicy,
+    classify_water_use,
+)
 
 __all__ = [
     "Coordinates",
@@ -30,5 +37,10 @@ __all__ = [
     "RiskLevel",
     "SensorStatus",
     "SiteContext",
+    "WaterQualitySnapshot",
+    "WaterUseAssessment",
+    "WaterUseClass",
+    "WaterUsePolicy",
     "__version__",
+    "classify_water_use",
 ]
