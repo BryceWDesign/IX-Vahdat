@@ -20,6 +20,13 @@ from ix_vahdat.domain import (
     SensorStatus,
     SiteContext,
 )
+from ix_vahdat.review import (
+    ReviewDecision,
+    ReviewGateResult,
+    ReviewerRecord,
+    ReviewStatus,
+    require_human_review,
+)
 from ix_vahdat.version import __version__
 from ix_vahdat.water_use import (
     WaterQualitySnapshot,
@@ -34,6 +41,10 @@ __all__ = [
     "DecisionStatus",
     "EvidenceQuality",
     "Measurement",
+    "ReviewDecision",
+    "ReviewGateResult",
+    "ReviewerRecord",
+    "ReviewStatus",
     "RiskLevel",
     "SensorStatus",
     "SiteContext",
@@ -43,4 +54,5 @@ __all__ = [
     "WaterUsePolicy",
     "__version__",
     "classify_water_use",
+    "require_human_review",
 ]
