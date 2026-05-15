@@ -16,6 +16,13 @@ from ix_vahdat.atmospheric import (
     AtmosphericWaterClimate,
     AtmosphericWaterInputs,
 )
+from ix_vahdat.awh import (
+    AWHMode,
+    AWHTriageOption,
+    AWHTriagePolicy,
+    AWHTriageResult,
+    triage_atmospheric_water,
+)
 from ix_vahdat.domain import (
     Coordinates,
     DecisionStatus,
@@ -60,6 +67,10 @@ from ix_vahdat.water_use import (
 )
 
 __all__ = [
+    "AWHMode",
+    "AWHTriageOption",
+    "AWHTriagePolicy",
+    "AWHTriageResult",
     "AtmosphericSiteConstraints",
     "AtmosphericWaterClimate",
     "AtmosphericWaterInputs",
@@ -93,4 +104,5 @@ __all__ = [
     "evaluate_water_quality_gate",
     "require_human_review",
     "route_treatment_batch",
+    "triage_atmospheric_water",
 ]
