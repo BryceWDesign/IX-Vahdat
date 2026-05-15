@@ -72,6 +72,13 @@ from ix_vahdat.receipts import (
     ReceiptKind,
     create_receipt,
 )
+from ix_vahdat.reserve import (
+    EmergencyReservePolicy,
+    EmergencyReserveResult,
+    EmergencyReserveSnapshot,
+    ReserveStatus,
+    evaluate_emergency_reserve,
+)
 from ix_vahdat.review import (
     ReviewDecision,
     ReviewGateResult,
@@ -107,6 +114,9 @@ __all__ = [
     "AtmosphericWaterInputs",
     "Coordinates",
     "DecisionStatus",
+    "EmergencyReservePolicy",
+    "EmergencyReserveResult",
+    "EmergencyReserveSnapshot",
     "EnergyAccountingPolicy",
     "EnergyAccountingResult",
     "EnergyPortfolioPolicy",
@@ -125,6 +135,7 @@ __all__ = [
     "PowerPriorityResult",
     "PowerSystemSnapshot",
     "ReceiptKind",
+    "ReserveStatus",
     "ReviewDecision",
     "ReviewGateResult",
     "ReviewerRecord",
@@ -148,6 +159,7 @@ __all__ = [
     "calculate_energy_accounting",
     "classify_water_use",
     "create_receipt",
+    "evaluate_emergency_reserve",
     "evaluate_energy_portfolio",
     "evaluate_power_priority",
     "evaluate_water_quality_gate",
