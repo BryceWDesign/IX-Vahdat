@@ -11,6 +11,24 @@ It does not certify water as potable, replace licensed engineers or public
 health authorities, issue permits, or authorize autonomous physical action.
 """
 
+from ix_vahdat.domain import (
+    Coordinates,
+    DecisionStatus,
+    EvidenceQuality,
+    Measurement,
+    RiskLevel,
+    SensorStatus,
+    SiteContext,
+)
 from ix_vahdat.version import __version__
 
-__all__ = ["__version__"]
+__all__ = [
+    "Coordinates",
+    "DecisionStatus",
+    "EvidenceQuality",
+    "Measurement",
+    "RiskLevel",
+    "SensorStatus",
+    "SiteContext",
+    "__version__",
+]
