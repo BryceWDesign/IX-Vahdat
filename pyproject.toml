@@ -38,6 +38,9 @@ dev = [
   "pytest>=8.0"
 ]
 
+[project.scripts]
+ix-vahdat = "ix_vahdat.cli:main"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
