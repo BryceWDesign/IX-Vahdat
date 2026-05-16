@@ -133,6 +133,12 @@ from ix_vahdat.review import (
     ReviewStatus,
     require_human_review,
 )
+from ix_vahdat.site_readiness import (
+    SiteReadinessClass,
+    SiteReadinessInputs,
+    SiteReadinessResult,
+    evaluate_site_readiness,
+)
 from ix_vahdat.treatment import (
     TreatmentRoute,
     TreatmentRoutingPolicy,
@@ -218,6 +224,9 @@ __all__ = [
     "RiskLevel",
     "SensorStatus",
     "SiteContext",
+    "SiteReadinessClass",
+    "SiteReadinessInputs",
+    "SiteReadinessResult",
     "TankHealthInput",
     "TreatmentRoute",
     "TreatmentRoutingPolicy",
@@ -246,6 +255,7 @@ __all__ = [
     "evaluate_maintenance",
     "evaluate_mar_readiness",
     "evaluate_power_priority",
+    "evaluate_site_readiness",
     "evaluate_water_quality_gate",
     "require_human_review",
     "route_treatment_batch",
