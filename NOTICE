@@ -1,9 +1,20 @@
 IX-Vahdat
 Copyright 2026 Bryce Lovell
 
-IX-Vahdat is licensed under the Apache License, Version 2.0.
+IX-Vahdat is a humanitarian water-resilience proof-of-concept released under
+the Apache License, Version 2.0.
 
-This project is a humanitarian water-resilience proof-of-concept.
-It is not a certified drinking-water system, public-health approval,
-engineering stamp, construction authorization, permit substitute,
-or autonomous physical-control system.
+This repository provides software decision-support structures for evidence
+gates, water-use classification, atmospheric-water triage, energy accounting,
+maintenance readiness, infrastructure-health review, emergency reserve
+protection, managed aquifer recharge screening, receipts, evidence bundles,
+BOM planning, and human review.
+
+IX-Vahdat does not certify water as potable, approve public distribution,
+replace licensed public-health review, replace licensed engineering review,
+issue permits, authorize construction, authorize discharge, authorize managed
+aquifer recharge, or control physical systems autonomously.
+
+Synthetic examples, demo payloads, estimated cost ranges, and generated
+receipts are not field evidence and must not be presented as real deployment
+records.
