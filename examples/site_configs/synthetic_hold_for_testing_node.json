@@ -1,0 +1,244 @@
+{
+  "schema_version": "0.1.0",
+  "project": "IX-Vahdat",
+  "config_id": "synthetic-hold-for-testing-node",
+  "synthetic_example": true,
+  "field_deployment_authorized": false,
+  "non_claims": [
+    "not field data",
+    "not a potable-water certification",
+    "not a public-health approval",
+    "not a permit substitute",
+    "not a construction authorization",
+    "not an autonomous physical-control instruction"
+  ],
+  "site": {
+    "site_id": "synthetic-hold-for-testing-node",
+    "name": "Synthetic Hold-for-Testing Water Node",
+    "operator": "synthetic local review team",
+    "coordinates": {
+      "latitude": 34.5,
+      "longitude": 50.5
+    },
+    "tags": [
+      "synthetic-demo",
+      "humanitarian-water-resilience",
+      "hold-for-testing-example"
+    ],
+    "metadata": {
+      "deployment_class": "software-proof-of-concept",
+      "country_specific_policy": false,
+      "real_world_site": false
+    }
+  },
+  "water_quality": {
+    "observed_at": "2026-05-14T12:00:00+00:00",
+    "measurements": {
+      "ph": {
+        "value": 7.0,
+        "unit": "pH",
+        "source_id": "synthetic-ph-meter",
+        "quality": "measured",
+        "sensor_status": "ok",
+        "notes": "synthetic demo value; not field evidence"
+      },
+      "turbidity_ntu": {
+        "value": 12.0,
+        "unit": "NTU",
+        "source_id": "synthetic-turbidity-meter",
+        "quality": "measured",
+        "sensor_status": "ok",
+        "notes": "synthetic demo value selected to require additional review"
+      },
+      "conductivity_us_cm": {
+        "value": 1300.0,
+        "unit": "uS/cm",
+        "source_id": "synthetic-conductivity-meter",
+        "quality": "measured",
+        "sensor_status": "ok",
+        "notes": "synthetic demo value; not field evidence"
+      },
+      "temperature_c": {
+        "value": 28.0,
+        "unit": "C",
+        "source_id": "synthetic-temperature-meter",
+        "quality": "measured",
+        "sensor_status": "ok",
+        "notes": "synthetic demo value; not field evidence"
+      }
+    },
+    "pathogen_indicator": {
+      "e_coli_present": null,
+      "source_id": "synthetic-pathogen-screen-missing",
+      "notes": "synthetic missing evidence example"
+    },
+    "chemical_screen": {
+      "passed": null,
+      "source_id": "synthetic-chemical-screen-missing",
+      "notes": "synthetic missing evidence example"
+    },
+    "disinfection_verified": false
+  },
+  "treatment_system": {
+    "pretreatment_available": true,
+    "filtration_available": true,
+    "disinfection_available": true,
+    "storage_clean": true,
+    "recirculation_available": true,
+    "waste_hold_available": true,
+    "filter_pressure_delta_kpa": 130.0,
+    "flow_rate_l_min": 0.4,
+    "tank_capacity_remaining_fraction": 0.15
+  },
+  "energy": {
+    "source": "solar",
+    "evidence_quality": "estimated",
+    "runtime_hours": 0.5,
+    "average_power_w": 650.0,
+    "water_output_l": 0.2,
+    "critical_load_power_w": 70.0,
+    "available_power_w": 200.0,
+    "battery_state_fraction": 0.35,
+    "reserve_battery_fraction": 0.25,
+    "measurement_notes": "synthetic estimated value selected to show review caution"
+  },
+  "power": {
+    "available_power_w": 250.0,
+    "battery_state_fraction": 0.35,
+    "reserve_battery_fraction": 0.25,
+    "loads": [
+      {
+        "name": "evidence_logger",
+        "priority": "critical",
+        "power_w": 20.0,
+        "enabled": true,
+        "required_for_safe_hold": true
+      },
+      {
+        "name": "water_quality_sensors",
+        "priority": "critical",
+        "power_w": 35.0,
+        "enabled": true,
+        "required_for_safe_hold": true
+      },
+      {
+        "name": "telemetry_radio",
+        "priority": "important",
+        "power_w": 15.0,
+        "enabled": true,
+        "required_for_safe_hold": false
+      },
+      {
+        "name": "treatment_pump",
+        "priority": "deferrable",
+        "power_w": 180.0,
+        "enabled": true,
+        "required_for_safe_hold": false
+      },
+      {
+        "name": "active_condensation_awg",
+        "priority": "nonessential",
+        "power_w": 700.0,
+        "enabled": true,
+        "required_for_safe_hold": false
+      }
+    ]
+  },
+  "reserve": {
+    "stored_water_l": 140.0,
+    "protected_reserve_l": 100.0,
+    "daily_priority_demand_l": 100.0,
+    "requested_release_l": 0.0,
+    "requested_use_label": "synthetic low-coverage reserve check",
+    "water_use_class": "hygiene_candidate",
+    "quality_gate_passed": true,
+    "treatment_route_reviewed": true,
+    "storage_clean": true,
+    "tank_integrity_verified": true,
+    "storage_age_hours": 48.0,
+    "emergency_request_declared": false
+  },
+  "atmospheric_water": {
+    "observed_at": "2026-05-14T12:00:00+00:00",
+    "climate": {
+      "relative_humidity_percent": 28.0,
+      "temperature_c": 36.0,
+      "dew_point_c": 13.0,
+      "wind_speed_m_s": 2.0,
+      "solar_irradiance_w_m2": 750.0,
+      "observed_fog": false,
+      "air_quality_index": 120.0,
+      "dust_risk_fraction": 0.55
+    },
+    "constraints": {
+      "daily_priority_water_demand_l": 300.0,
+      "available_electric_power_w": 350.0,
+      "battery_state_fraction": 0.35,
+      "available_collection_area_m2": 8.0,
+      "maintenance_capacity_fraction": 0.55,
+      "storage_capacity_remaining_l": 40.0,
+      "potable_claim_allowed_by_local_review": false
+    }
+  },
+  "maintenance": {
+    "items": [
+      {
+        "item_id": "filter-1",
+        "label": "cartridge filter",
+        "category": "filter",
+        "state": "due_soon",
+        "critical": true,
+        "evidence_quality": "measured",
+        "sensor_status": "ok",
+        "hours_since_service": 85.0,
+        "service_interval_hours": 100.0
+      },
+      {
+        "item_id": "uv-1",
+        "label": "UV disinfection lamp",
+        "category": "uv_disinfection",
+        "state": "unverified",
+        "critical": true,
+        "evidence_quality": "estimated",
+        "sensor_status": "unverified",
+        "hours_since_service": 90.0,
+        "service_interval_hours": 100.0
+      }
+    ]
+  },
+  "infrastructure": {
+    "observed_at": "2026-05-14T12:00:00+00:00",
+    "assets": [
+      {
+        "asset_id": "tank-1",
+        "label": "synthetic storage tank",
+        "asset_type": "storage_tank",
+        "health_state": "watch",
+        "evidence_quality": "measured",
+        "sensor_status": "ok",
+        "leak_detected": false,
+        "critical_to_water_safety": true
+      },
+      {
+        "asset_id": "pipe-1",
+        "label": "synthetic feed pipe",
+        "asset_type": "pipe",
+        "health_state": "degraded",
+        "evidence_quality": "measured",
+        "sensor_status": "ok",
+        "leak_detected": false,
+        "critical_to_water_safety": true
+      }
+    ]
+  },
+  "human_review": {
+    "required": true,
+    "reviewer_id": null,
+    "reviewer_name": null,
+    "role": null,
+    "organization": null,
+    "decision": null,
+    "authority_basis": null,
+    "notes": "synthetic example intentionally lacks human approval"
+  }
+}
