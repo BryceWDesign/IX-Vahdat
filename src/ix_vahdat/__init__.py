@@ -39,6 +39,13 @@ from ix_vahdat.awh_scoring import (
     AWHScoreBand,
     score_awh_modes,
 )
+from ix_vahdat.bom import (
+    BOMCategory,
+    BOMEstimate,
+    BOMItem,
+    DeploymentTier,
+    estimate_bom,
+)
 from ix_vahdat.bundles import (
     BundleItem,
     EvidenceBundle,
@@ -171,10 +178,14 @@ __all__ = [
     "AtmosphericSiteConstraints",
     "AtmosphericWaterClimate",
     "AtmosphericWaterInputs",
+    "BOMCategory",
+    "BOMEstimate",
+    "BOMItem",
     "BundleItem",
     "CollectionPanelKind",
     "Coordinates",
     "DecisionStatus",
+    "DeploymentTier",
     "EmergencyReservePolicy",
     "EmergencyReserveResult",
     "EmergencyReserveSnapshot",
@@ -256,6 +267,7 @@ __all__ = [
     "classify_water_use",
     "create_evidence_bundle",
     "create_receipt",
+    "estimate_bom",
     "evaluate_emergency_reserve",
     "evaluate_energy_portfolio",
     "evaluate_failure_modes",
