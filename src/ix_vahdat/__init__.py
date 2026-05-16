@@ -145,6 +145,15 @@ from ix_vahdat.review import (
     ReviewStatus,
     require_human_review,
 )
+from ix_vahdat.runbooks import (
+    RunbookEvaluationResult,
+    RunbookStep,
+    RunbookStepKind,
+    RunbookStepResult,
+    RunbookStepStatus,
+    WaterNodeRunbook,
+    evaluate_runbook,
+)
 from ix_vahdat.site_readiness import (
     SiteReadinessClass,
     SiteReadinessInputs,
@@ -240,6 +249,11 @@ __all__ = [
     "ReviewerRecord",
     "ReviewStatus",
     "RiskLevel",
+    "RunbookEvaluationResult",
+    "RunbookStep",
+    "RunbookStepKind",
+    "RunbookStepResult",
+    "RunbookStepStatus",
     "SensorStatus",
     "SiteContext",
     "SiteReadinessClass",
@@ -251,6 +265,7 @@ __all__ = [
     "TreatmentRoutingResult",
     "TreatmentSystemSnapshot",
     "WaterEnergyProfile",
+    "WaterNodeRunbook",
     "WaterQualityGatePolicy",
     "WaterQualityGateResult",
     "WaterQualitySnapshot",
@@ -275,6 +290,7 @@ __all__ = [
     "evaluate_maintenance",
     "evaluate_mar_readiness",
     "evaluate_power_priority",
+    "evaluate_runbook",
     "evaluate_site_readiness",
     "evaluate_water_quality_gate",
     "require_human_review",
