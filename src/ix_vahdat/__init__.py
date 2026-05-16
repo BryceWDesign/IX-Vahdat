@@ -39,6 +39,11 @@ from ix_vahdat.awh_scoring import (
     AWHScoreBand,
     score_awh_modes,
 )
+from ix_vahdat.bundles import (
+    BundleItem,
+    EvidenceBundle,
+    create_evidence_bundle,
+)
 from ix_vahdat.domain import (
     Coordinates,
     DecisionStatus,
@@ -166,6 +171,7 @@ __all__ = [
     "AtmosphericSiteConstraints",
     "AtmosphericWaterClimate",
     "AtmosphericWaterInputs",
+    "BundleItem",
     "CollectionPanelKind",
     "Coordinates",
     "DecisionStatus",
@@ -179,6 +185,7 @@ __all__ = [
     "EnergyProfileAssessment",
     "EnergySnapshot",
     "EnergySource",
+    "EvidenceBundle",
     "EvidenceInput",
     "EvidenceQuality",
     "EvidenceReceipt",
@@ -247,6 +254,7 @@ __all__ = [
     "build_tank_observation",
     "calculate_energy_accounting",
     "classify_water_use",
+    "create_evidence_bundle",
     "create_receipt",
     "evaluate_emergency_reserve",
     "evaluate_energy_portfolio",
