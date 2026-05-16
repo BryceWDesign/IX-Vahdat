@@ -110,6 +110,15 @@ from ix_vahdat.receipts import (
     ReceiptKind,
     create_receipt,
 )
+from ix_vahdat.recharge import (
+    MARReadinessClass,
+    MARReadinessPolicy,
+    MARReadinessResult,
+    MARSiteObservation,
+    MARWaterSource,
+    RechargeMethod,
+    evaluate_mar_readiness,
+)
 from ix_vahdat.reserve import (
     EmergencyReservePolicy,
     EmergencyReserveResult,
@@ -179,6 +188,11 @@ __all__ = [
     "InfrastructureObservation",
     "InfrastructureSnapshot",
     "LoadPriority",
+    "MARReadinessClass",
+    "MARReadinessPolicy",
+    "MARReadinessResult",
+    "MARSiteObservation",
+    "MARWaterSource",
     "MaintenanceCategory",
     "MaintenanceItem",
     "MaintenancePolicy",
@@ -195,6 +209,7 @@ __all__ = [
     "PowerSystemSnapshot",
     "PumpHealthInput",
     "ReceiptKind",
+    "RechargeMethod",
     "ReserveStatus",
     "ReviewDecision",
     "ReviewGateResult",
@@ -229,6 +244,7 @@ __all__ = [
     "evaluate_failure_modes",
     "evaluate_infrastructure_health",
     "evaluate_maintenance",
+    "evaluate_mar_readiness",
     "evaluate_power_priority",
     "evaluate_water_quality_gate",
     "require_human_review",
